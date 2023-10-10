@@ -24,6 +24,22 @@
     transform: translateZ(0);
   }
 }
+@keyframes right-to-left {
+  0% {
+    right: -41px;
+  }
+  100% {
+    right: -21px;
+  }
+}
+@keyframes left-to-right {
+  0% {
+    left: -41px;
+  }
+  100% {
+    left: -21px;
+  }
+}
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -247,7 +263,12 @@ header.sticky {
   background-color: #252527;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
   animation: 0.5s ease-in-out fadeInDown;
-  padding-bottom: 20px;
+  padding: 20px 0;
+}
+header.sticky .bar {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 @media (max-width: 768px) {
   header.sticky {
@@ -325,6 +346,8 @@ main .hero-section .swiper .swiper-slide.swiper-slide-active p {
   animation: fadeInUp 1s 1.5s both;
 }
 main .hero-section .swiper .heroSwiper-button-next {
+  transition: all 0.3s ease;
+  z-index: 99;
   position: absolute;
   left: 55px;
   z-index: 999;
@@ -359,7 +382,15 @@ main .hero-section .swiper .heroSwiper-button-next::before {
   width: 60px;
   height: 19px;
 }
+main .hero-section .swiper .heroSwiper-button-next:hover {
+  border-radius: 50%;
+}
+main .hero-section .swiper .heroSwiper-button-next:hover::before {
+  animation: right-to-left 0.3s ease;
+}
 main .hero-section .swiper .heroSwiper-button-prev {
+  transition: all 0.3s ease;
+  z-index: 99;
   position: absolute;
   right: 55px;
   z-index: 999;
@@ -393,6 +424,12 @@ main .hero-section .swiper .heroSwiper-button-prev::before {
   background-position: -727px -399px;
   width: 60px;
   height: 19px;
+}
+main .hero-section .swiper .heroSwiper-button-prev:hover {
+  border-radius: 50%;
+}
+main .hero-section .swiper .heroSwiper-button-prev:hover::before {
+  animation: left-to-right 0.3s ease;
 }
 main .hero-section .heroPagination {
   display: none;
@@ -654,13 +691,13 @@ main .promo .text-box .dec-wave-1 {
 }
 main .promo .text-box h2 {
   position: relative;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 600;
   color: #ebecf5;
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 42px;
-  left: -80px;
+  margin-bottom: 30px;
+  left: 24px;
 }
 @media (max-width: 576px) {
   main .promo .text-box h2 {
@@ -715,6 +752,8 @@ main .best-selling .pro_card h5 span {
   color: #b59a7b;
 }
 main .best-selling .productsSwiper-button-next {
+  transition: all 0.3s ease;
+  z-index: 99;
   position: absolute;
   left: 55px;
   z-index: 999;
@@ -744,7 +783,15 @@ main .best-selling .productsSwiper-button-next::before {
   width: 60px;
   height: 19px;
 }
+main .best-selling .productsSwiper-button-next:hover {
+  border-radius: 50%;
+}
+main .best-selling .productsSwiper-button-next:hover::before {
+  animation: right-to-left 0.3s ease;
+}
 main .best-selling .productsSwiper-button-prev {
+  transition: all 0.3s ease;
+  z-index: 99;
   position: absolute;
   right: 55px;
   z-index: 999;
@@ -773,6 +820,12 @@ main .best-selling .productsSwiper-button-prev::before {
   background-position: -727px -399px;
   width: 60px;
   height: 19px;
+}
+main .best-selling .productsSwiper-button-prev:hover {
+  border-radius: 50%;
+}
+main .best-selling .productsSwiper-button-prev:hover::before {
+  animation: left-to-right 0.3s ease;
 }
 main .contact {
   padding: 60px 12px;

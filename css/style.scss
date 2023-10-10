@@ -48,6 +48,22 @@ $shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
     transform: translateZ(0);
   }
 }
+@keyframes right-to-left {
+  0% {
+    right: -41px;
+  }
+  100% {
+    right: -21px;
+  }
+}
+@keyframes left-to-right {
+  0% {
+    left: -41px;
+  }
+  100% {
+    left: -21px;
+  }
+}
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -247,7 +263,12 @@ header {
     background-color: $main;
     box-shadow: $shadow;
     animation: .5s ease-in-out fadeInDown;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    .bar {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+    }
     @media (max-width: 768px) {
       padding-bottom: 0;
     }
@@ -289,7 +310,7 @@ main {
             @include centerFlex();
             flex-direction: column;
             gap: 8px;
-            img{
+            img {
               height: 64px;
             }
             h6 {
@@ -322,6 +343,8 @@ main {
         }
       }
       .heroSwiper-button-next {
+        transition: all .3s ease;
+        z-index: 99;
         @media (max-width: 768px) {
           display: none !important;
         }
@@ -351,8 +374,16 @@ main {
           width: 60px;
           height: 19px;
         }
+        &:hover {
+          border-radius: 50%;
+          &::before {
+            animation: right-to-left .3s ease;
+          }
+        }
       }
       .heroSwiper-button-prev {
+        transition: all .3s ease;
+        z-index: 99;
         @media (max-width: 768px) {
           display: none !important;
         }
@@ -381,6 +412,12 @@ main {
           background-position: -727px -399px;
           width: 60px;
           height: 19px;
+        }
+        &:hover {
+          border-radius: 50%;
+          &::before {
+            animation: left-to-right .3s ease;
+          }
         }
       }
     }
@@ -621,13 +658,13 @@ main {
       }
       h2 {
         position: relative;
-        font-size: 42px;
+        font-size: 38px;
         font-weight: 600;
         color: #ebecf5;
         text-transform: uppercase;
         letter-spacing: 5px;
-        margin-bottom: 42px;
-        left: -80px;
+        margin-bottom: 30px;
+        left: 24px;
         @media (max-width: 576px) {
           left: 0;
           font-size: 38px;
@@ -676,6 +713,8 @@ main {
       }
     }
     .productsSwiper-button-next {
+      transition: all .3s ease;
+      z-index: 99;
       position: absolute;
       left: 55px;
       z-index: 999;
@@ -702,8 +741,16 @@ main {
         width: 60px;
         height: 19px;
       }
+      &:hover {
+        border-radius: 50%;
+        &::before {
+          animation: right-to-left .3s ease;
+        }
+      }
     }
     .productsSwiper-button-prev {
+      transition: all .3s ease;
+      z-index: 99;
       position: absolute;
       right: 55px;
       z-index: 999;
@@ -729,6 +776,12 @@ main {
         background-position: -727px -399px;
         width: 60px;
         height: 19px;
+      }
+      &:hover {
+        border-radius: 50%;
+        &::before {
+          animation: left-to-right .3s ease;
+        }
       }
     }
   }
