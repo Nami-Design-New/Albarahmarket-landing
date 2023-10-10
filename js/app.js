@@ -10,8 +10,12 @@ var swiper = new Swiper(".heroSwiper", {
     clickable: true
   },
   navigation: {
-    nextEl: ".mainSliderNext",
-    prevEl: ".mainSliderPrev"
+    nextEl: ".hrosSwiper-button-next",
+    prevEl: ".heroSwiper-button-prev"
+  },
+  pagination: {
+    el: ".heroPagination",
+    clickable: true
   }
 });
 $(document).ready(function() {

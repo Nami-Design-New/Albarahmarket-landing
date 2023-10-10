@@ -38,6 +38,16 @@ $shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
     transform: translateZ(0);
   }
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -279,10 +289,8 @@ main {
             @include centerFlex();
             flex-direction: column;
             gap: 8px;
-            h2 {
-              color: $white;
-              font-size: 16px;
-              margin: 0;
+            img{
+              height: 64px;
             }
             h6 {
               color: $white;
@@ -295,11 +303,100 @@ main {
             }
             p {
               text-align: center;
-              color: $white;
+              color: $second;
               font-size: 14px;
               line-height: 24px;
             }
           }
+        }
+        &.swiper-slide-active {
+          img {
+            animation: fadeInUp 1s 0.5s both;
+          }
+          h6 {
+            animation: fadeInUp 1s 0.75s both;
+          }
+          p {
+            animation: fadeInUp 1s 1.5s both;
+          }
+        }
+      }
+      .heroSwiper-button-next {
+        @media (max-width: 768px) {
+          display: none !important;
+        }
+        position: absolute;
+        left: 55px;
+        z-index: 999;
+        width: 60px;
+        height: 60px;
+        top: 56%;
+        transform: translateY(-50%);
+        border: 1px solid #b59a7b;
+        text-indent: -9999px;
+        background-color: transparent;
+        transition: .3s ease;
+        @media (max-width: 576px) {
+          top: 100%;
+          left: 80px;
+        }
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: -21px;
+          background-image: url(../images/sprite.png);
+          background-position: -792px -399px;
+          width: 60px;
+          height: 19px;
+        }
+      }
+      .heroSwiper-button-prev {
+        @media (max-width: 768px) {
+          display: none !important;
+        }
+        position: absolute;
+        right: 55px;
+        z-index: 999;
+        width: 60px;
+        height: 60px;
+        top: 56%;
+        transform: translateY(-50%);
+        border: 1px solid #b59a7b;
+        text-indent: -9999px;
+        background-color: transparent;
+        transition: .3s ease;
+        @media (max-width: 576px) {
+          top: 100%;
+          right: 80px;
+        }
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: -21px;
+          background-image: url(../images/sprite.png);
+          background-position: -727px -399px;
+          width: 60px;
+          height: 19px;
+        }
+      }
+    }
+    .heroPagination {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+      .swiper-pagination-bullet {
+        border-radius: 0;
+        border: 1px solid $second;
+        width: 14px;
+        height: 14px;
+        &.swiper-pagination-bullet-active {
+          background: none;
+          border: 2px solid #b59a7b;
         }
       }
     }
@@ -421,6 +518,9 @@ main {
       padding: 100px 0;
       position: relative;
       background: url(../images/advantages-bg.jpg);
+      @media (max-width: 576px) {
+        padding: 60px 24px;
+      }
       .dec-pepper-1 {
         position: absolute;
         right: -15px;
@@ -445,6 +545,10 @@ main {
         text-align: center;
         font-size: 44px;
         margin-bottom: 64px;
+        @media (max-width: 576px) {
+          font-size: 36px;
+          margin-bottom: 42px;
+        }
       }
       .advantage {
         display: flex;
@@ -456,6 +560,9 @@ main {
           @include centerFlex();
           img {
             max-width: 150px;
+            @media (max-width: 576px) {
+              max-width: 120px;
+            }
           }
         }
         h6 {
@@ -464,6 +571,10 @@ main {
           color: #ebecf5;
           text-align: center;
           padding: 0 12px;
+          @media (max-width: 576px) {
+            font-size: 17px;
+            line-height: 34px;
+          }
         }
       }
     }
