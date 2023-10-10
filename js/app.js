@@ -30,7 +30,7 @@ $(document).ready(function() {
   AOS.init({
     offset: 20,
     delay: 50,
-    duration: 500,
+    duration: 300,
     easing: "linear",
     once: true
   });

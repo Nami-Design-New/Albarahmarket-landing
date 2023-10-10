@@ -387,12 +387,20 @@ main .hero-section .swiper .heroSwiper-button-next::before {
   background-position: -792px -399px;
   width: 60px;
   height: 19px;
+  transition: all 0.3s ease;
 }
 main .hero-section .swiper .heroSwiper-button-next:hover {
   border-radius: 50%;
 }
 main .hero-section .swiper .heroSwiper-button-next:hover::before {
-  animation: right-to-left 0.3s ease;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 7px;
+  background-image: url(../images/sprite.png);
+  background-position: -792px -399px;
+  width: 45px;
+  height: 19px;
 }
 main .hero-section .swiper .heroSwiper-button-prev {
   transition: all 0.3s ease;
@@ -430,12 +438,20 @@ main .hero-section .swiper .heroSwiper-button-prev::before {
   background-position: -727px -399px;
   width: 60px;
   height: 19px;
+  transition: all 0.3s ease;
 }
 main .hero-section .swiper .heroSwiper-button-prev:hover {
   border-radius: 50%;
 }
 main .hero-section .swiper .heroSwiper-button-prev:hover::before {
-  animation: left-to-right 0.3s ease;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 7px;
+  background-image: url(../images/sprite.png);
+  background-position: -745px -399px;
+  width: 45px;
+  height: 19px;
 }
 main .hero-section .heroPagination {
   display: none;
@@ -593,6 +609,13 @@ main .features-section .container .dec-pepper-1 {
   background-position: -651px 0px;
   width: 312px;
   height: 394px;
+}
+@media (max-width: 576px) {
+  main .features-section .container .dec-pepper-1 {
+    background-position: -668px 0px;
+    width: 155px;
+    height: 396px;
+  }
 }
 main .features-section .container::after {
   content: "";
@@ -788,12 +811,20 @@ main .best-selling .productsSwiper-button-next::before {
   background-position: -792px -399px;
   width: 60px;
   height: 19px;
+  transition: all 0.3s ease;
 }
 main .best-selling .productsSwiper-button-next:hover {
   border-radius: 50%;
 }
 main .best-selling .productsSwiper-button-next:hover::before {
-  animation: right-to-left 0.3s ease;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 7px;
+  background-image: url(../images/sprite.png);
+  background-position: -792px -399px;
+  width: 45px;
+  height: 19px;
 }
 main .best-selling .productsSwiper-button-prev {
   transition: all 0.3s ease;
@@ -826,12 +857,20 @@ main .best-selling .productsSwiper-button-prev::before {
   background-position: -727px -399px;
   width: 60px;
   height: 19px;
+  transition: all 0.3s ease;
 }
 main .best-selling .productsSwiper-button-prev:hover {
   border-radius: 50%;
 }
 main .best-selling .productsSwiper-button-prev:hover::before {
-  animation: left-to-right 0.3s ease;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 7px;
+  background-image: url(../images/sprite.png);
+  background-position: -745px -399px;
+  width: 45px;
+  height: 19px;
 }
 main .contact {
   padding: 60px 12px;

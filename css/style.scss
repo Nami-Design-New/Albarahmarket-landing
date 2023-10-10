@@ -377,11 +377,19 @@ main {
           background-position: -792px -399px;
           width: 60px;
           height: 19px;
+          transition: all .3s ease;
         }
         &:hover {
           border-radius: 50%;
           &::before {
-            animation: right-to-left .3s ease;
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 7px;
+            background-image: url(../images/sprite.png);
+            background-position: -792px -399px;
+            width: 45px;
+            height: 19px;
           }
         }
       }
@@ -416,11 +424,19 @@ main {
           background-position: -727px -399px;
           width: 60px;
           height: 19px;
+          transition: all .3s ease;
         }
         &:hover {
           border-radius: 50%;
           &::before {
-            animation: left-to-right .3s ease;
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 7px;
+            background-image: url(../images/sprite.png);
+            background-position: -745px -399px;
+            width: 45px;
+            height: 19px;
           }
         }
       }
@@ -570,6 +586,11 @@ main {
         background-position: -651px 0px;
         width: 312px;
         height: 394px;
+        @media (max-width: 576px) {
+          background-position: -668px 0px;
+          width: 155px;
+          height: 396px;
+        }
       }
       &::after {
         content: '';
@@ -744,11 +765,19 @@ main {
         background-position: -792px -399px;
         width: 60px;
         height: 19px;
+        transition: all .3s ease;
       }
       &:hover {
         border-radius: 50%;
         &::before {
-          animation: right-to-left .3s ease;
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: 7px;
+          background-image: url(../images/sprite.png);
+          background-position: -792px -399px;
+          width: 45px;
+          height: 19px;
         }
       }
     }
@@ -780,11 +809,19 @@ main {
         background-position: -727px -399px;
         width: 60px;
         height: 19px;
+        transition: all .3s ease;
       }
       &:hover {
         border-radius: 50%;
         &::before {
-          animation: left-to-right .3s ease;
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: 7px;
+          background-image: url(../images/sprite.png);
+          background-position: -745px -399px;
+          width: 45px;
+          height: 19px;
         }
       }
     }
