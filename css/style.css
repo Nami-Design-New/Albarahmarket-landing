@@ -322,7 +322,7 @@ main .hero-section .swiper .swiper-slide .content .wrap {
   flex-direction: column;
   gap: 8px;
 }
-main .hero-section .swiper .swiper-slide .content .wrap img {
+main .hero-section .swiper .swiper-slide .content .wrap .halal-icon {
   height: 64px;
 }
 main .hero-section .swiper .swiper-slide .content .wrap h6 {
@@ -342,7 +342,7 @@ main .hero-section .swiper .swiper-slide .content .wrap p {
   font-size: 14px;
   line-height: 24px;
 }
-main .hero-section .swiper .swiper-slide.swiper-slide-active img {
+main .hero-section .swiper .swiper-slide.swiper-slide-active .halal-icon {
   animation: fadeInUp 1s 0.5s both;
 }
 main .hero-section .swiper .swiper-slide.swiper-slide-active h6 {

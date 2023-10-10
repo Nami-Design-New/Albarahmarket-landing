@@ -314,7 +314,7 @@ main {
             @include centerFlex();
             flex-direction: column;
             gap: 8px;
-            img {
+            .halal-icon {
               height: 64px;
             }
             h6 {
@@ -335,7 +335,7 @@ main {
           }
         }
         &.swiper-slide-active {
-          img {
+          .halal-icon {
             animation: fadeInUp 1s 0.5s both;
           }
           h6 {
