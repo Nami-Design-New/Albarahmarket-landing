@@ -711,15 +711,20 @@ main {
       font-size: 36px;
       text-align: center;
       color: #ebecf5;
-      margin-bottom: 32px;
+      margin-bottom: 48px;
+    }
+    .swiper-slide{
+      height: auto;
     }
     .pro_card {
+      height: 100%;
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 16px;
       .image {
         width: 100%;
+        height: 100%;
         @include centerFlex();
         img {
           width: 100%;
@@ -730,6 +735,7 @@ main {
         color: #ebecf5;
         text-align: center;
         font-size: 14px;
+        line-height: 24px;
         span {
           color: #b59a7b;
         }

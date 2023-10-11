@@ -751,9 +751,13 @@ main .best-selling h2 {
   font-size: 36px;
   text-align: center;
   color: #ebecf5;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+}
+main .best-selling .swiper-slide {
+  height: auto;
 }
 main .best-selling .pro_card {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -761,6 +765,7 @@ main .best-selling .pro_card {
 }
 main .best-selling .pro_card .image {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -774,6 +779,7 @@ main .best-selling .pro_card h5 {
   color: #ebecf5;
   text-align: center;
   font-size: 14px;
+  line-height: 24px;
 }
 main .best-selling .pro_card h5 span {
   color: #b59a7b;
