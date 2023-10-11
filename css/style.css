@@ -352,8 +352,6 @@ main .hero-section .swiper .swiper-slide.swiper-slide-active p {
   animation: fadeInUp 1s 1.5s both;
 }
 main .hero-section .swiper .heroSwiper-button-next {
-  transition: all 0.3s ease;
-  z-index: 99;
   position: absolute;
   left: 55px;
   z-index: 999;
@@ -364,7 +362,7 @@ main .hero-section .swiper .heroSwiper-button-next {
   border: 1px solid #b59a7b;
   text-indent: -9999px;
   background-color: transparent;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
   main .hero-section .swiper .heroSwiper-button-next {
@@ -396,10 +394,10 @@ main .hero-section .swiper .heroSwiper-button-next:hover::before {
   display: block;
   position: absolute;
   top: 20px;
-  left: 7px;
+  right: 12px;
   background-image: url(../images/sprite.png);
   background-position: -792px -399px;
-  width: 45px;
+  width: 36px;
   height: 19px;
 }
 main .hero-section .swiper .heroSwiper-button-prev {
@@ -447,10 +445,10 @@ main .hero-section .swiper .heroSwiper-button-prev:hover::before {
   display: block;
   position: absolute;
   top: 20px;
-  left: 7px;
+  left: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -745px -399px;
-  width: 45px;
+  background-position: -752px -399px;
+  width: 36px;
   height: 19px;
 }
 main .hero-section .heroPagination {
@@ -820,10 +818,10 @@ main .best-selling .productsSwiper-button-next:hover::before {
   display: block;
   position: absolute;
   top: 20px;
-  left: 7px;
+  right: 12px;
   background-image: url(../images/sprite.png);
   background-position: -792px -399px;
-  width: 45px;
+  width: 36px;
   height: 19px;
 }
 main .best-selling .productsSwiper-button-prev {
@@ -866,10 +864,10 @@ main .best-selling .productsSwiper-button-prev:hover::before {
   display: block;
   position: absolute;
   top: 20px;
-  left: 7px;
+  left: 12px;
   background-image: url(../images/sprite.png);
-  background-position: -745px -399px;
-  width: 45px;
+  background-position: -752px -399px;
+  width: 36px;
   height: 19px;
 }
 main .contact {

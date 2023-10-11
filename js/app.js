@@ -10,7 +10,7 @@ var swiper = new Swiper(".heroSwiper", {
     clickable: true
   },
   navigation: {
-    nextEl: ".hrosSwiper-button-next",
+    nextEl: ".heroSwiper-button-next",
     prevEl: ".heroSwiper-button-prev"
   },
   pagination: {
