@@ -517,10 +517,10 @@ main {
       display: flex;
       flex-direction: column;
       position: relative;
+      margin-top: 80px;
       gap: 8px;
       h2 {
         color: #ebecf5;
-        margin-top: 80px;
         font-size: 52px;
         @media (max-width: 576px) {
           font-size: 40px;
@@ -538,24 +538,21 @@ main {
       }
     }
     .iso {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
       position: relative;
-      gap: 16px;
+      @include centerFlex();
+      height: calc(100% - 80px);
       margin-top: 80px;
       .img {
+        width: 100%;
+        height: 100%;
+        @include centerFlex();
         img {
-          width: 162px;
-        }
-        &:last-child {
-          img {
-            width: 162px;
-          }
+          width: 70%;
         }
       }
       .dec-tree-1 {
         position: absolute;
-        bottom: -550px;
+        bottom: -400px;
         left: 0;
         background-image: url(../images/sprite.png);
         background-position: -366px 0px;
@@ -875,6 +872,9 @@ main {
             font-size: 32px;
             color: #b59a7b;
           }
+          img {
+            height: 48px;
+          }
         }
         .text {
           display: flex;
@@ -905,14 +905,8 @@ footer {
     @include space-between();
     @media (max-width: 576px) {
       flex-direction: column;
-      gap: 24px;
+      gap: 16px;
     }
-  }
-  .copy {
-    border-top: 1px solid #454545;
-    width: 100%;
-    padding-top: 16px;
-    @include centerFlex();
   }
   .logo {
     a {
@@ -947,6 +941,7 @@ footer {
   .copy {
     p {
       color: $second;
+      margin: 0;
     }
   }
 }
