@@ -588,7 +588,7 @@ main .about-section .iso .dec-tree-1 {
 }
 @media (max-width: 576px) {
   main .about-section .iso .dec-tree-1 {
-    bottom: -318%;
+    bottom: -456%;
     height: 375px;
   }
 }
@@ -650,7 +650,7 @@ main .features-section .container .advantage {
   gap: 24px;
 }
 main .features-section .container .advantage .advantage-img {
-  width: 100%;
+  min-width: 136px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -559,7 +559,7 @@ main {
         width: 280px;
         height: 450px;
         @media (max-width: 576px) {
-          bottom: -318%;
+          bottom: -456%;
           height: 375px;
         }
       }
@@ -614,7 +614,7 @@ main {
         padding: 0 28px;
         gap: 24px;
         .advantage-img {
-          width: 100%;
+          min-width: 136px;
           @include centerFlex();
           img {
             max-width: 150px;
