@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); //logo font
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap"); //logo font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap");
 $main: #252527;
 $second: #b0afb9;
 $white: #fff;
@@ -81,7 +81,7 @@ $shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -138,7 +138,7 @@ header {
       }
       a {
         color: #ebecf5;
-        font-family: 'Orbitron', sans-serif;
+        font-family: "Orbitron", sans-serif;
         font-size: 28px;
       }
     }
@@ -167,9 +167,9 @@ header {
         height: 2px;
         width: 28px;
         background-color: #ebecf5;
-        transition: .5s ease;
+        transition: 0.5s ease;
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: -9px;
@@ -177,10 +177,10 @@ header {
           height: 2px;
           width: 100%;
           background-color: #ebecf5;
-          transition: .5s ease;
+          transition: 0.5s ease;
         }
         &::after {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           bottom: -9px;
@@ -188,7 +188,7 @@ header {
           height: 2px;
           width: 100%;
           background-color: #ebecf5;
-          transition: .5s ease;
+          transition: 0.5s ease;
         }
         &.menu-transform {
           background-color: transparent;
@@ -209,7 +209,7 @@ header {
     border-top: 1px solid $second;
     border-bottom: 1px solid $second;
     height: 50px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     .nav-links {
       display: flex;
       align-items: center;
@@ -262,7 +262,7 @@ header {
     position: fixed;
     background-color: $main;
     box-shadow: $shadow;
-    animation: .5s ease-in-out fadeInDown;
+    animation: 0.5s ease-in-out fadeInDown;
     padding: 20px 0;
     .bar {
       height: 0;
@@ -360,13 +360,13 @@ main {
         border: 1px solid #b59a7b;
         text-indent: -9999px;
         background-color: transparent;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         @media (max-width: 576px) {
           top: 100%;
           left: 80px;
         }
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 20px;
@@ -375,7 +375,7 @@ main {
           background-position: -792px -399px;
           width: 60px;
           height: 19px;
-          transition: all .3s ease;
+          transition: all 0.3s ease;
         }
         &:hover {
           border-radius: 50%;
@@ -392,7 +392,7 @@ main {
         }
       }
       .heroSwiper-button-prev {
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         z-index: 99;
         @media (max-width: 768px) {
           display: none !important;
@@ -407,13 +407,13 @@ main {
         border: 1px solid #b59a7b;
         text-indent: -9999px;
         background-color: transparent;
-        transition: .3s ease;
+        transition: 0.3s ease;
         @media (max-width: 576px) {
           top: 100%;
           right: 80px;
         }
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 20px;
@@ -422,7 +422,7 @@ main {
           background-position: -727px -399px;
           width: 60px;
           height: 19px;
-          transition: all .3s ease;
+          transition: all 0.3s ease;
         }
         &:hover {
           border-radius: 50%;
@@ -592,7 +592,7 @@ main {
         }
       }
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 100%;
@@ -621,7 +621,7 @@ main {
           @include centerFlex();
           img {
             max-width: 150px;
-            @media (max-width: 576px) {
+            @media (max-width: 678px) {
               max-width: 100px;
             }
           }
@@ -632,7 +632,7 @@ main {
           color: #ebecf5;
           text-align: center;
           padding: 0 12px;
-          @media (max-width: 576px) {
+          @media (max-width: 678px) {
             font-size: 14px;
             padding: 0;
             text-align: left;
@@ -640,7 +640,7 @@ main {
             margin: auto 0;
           }
         }
-        @media (max-width: 576px) {
+        @media (max-width: 678px) {
           margin-bottom: 12px;
           padding: 0 16px;
           flex-direction: row;
@@ -660,7 +660,7 @@ main {
         }
       }
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 100%;
@@ -735,12 +735,14 @@ main {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      padding: 12px;
       .image {
         width: 100%;
-        height: 100%;
+        // height: 100%;
         @include centerFlex();
         img {
           width: 100%;
+          aspect-ratio: 1/1;
           object-fit: contain;
         }
       }
@@ -755,7 +757,7 @@ main {
       }
     }
     .productsSwiper-button-next {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       z-index: 99;
       position: absolute;
       left: 55px;
@@ -767,13 +769,13 @@ main {
       border: 1px solid #b59a7b;
       text-indent: -9999px;
       background-color: transparent;
-      transition: .3s ease;
+      transition: 0.3s ease;
       @media (max-width: 576px) {
         top: 100%;
         left: 80px;
       }
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 20px;
@@ -782,7 +784,7 @@ main {
         background-position: -792px -399px;
         width: 60px;
         height: 19px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
       }
       &:hover {
         border-radius: 50%;
@@ -799,7 +801,7 @@ main {
       }
     }
     .productsSwiper-button-prev {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       z-index: 99;
       position: absolute;
       right: 55px;
@@ -811,13 +813,13 @@ main {
       border: 1px solid #b59a7b;
       text-indent: -9999px;
       background-color: transparent;
-      transition: .3s ease;
+      transition: 0.3s ease;
       @media (max-width: 576px) {
         top: 100%;
         right: 80px;
       }
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 20px;
@@ -826,7 +828,7 @@ main {
         background-position: -727px -399px;
         width: 60px;
         height: 19px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
       }
       &:hover {
         border-radius: 50%;
@@ -917,7 +919,7 @@ footer {
   .logo {
     a {
       color: #ebecf5;
-      font-family: 'Orbitron', sans-serif;
+      font-family: "Orbitron", sans-serif;
       font-size: 28px;
     }
   }
@@ -929,12 +931,12 @@ footer {
       height: 40px;
       @include centerFlex();
       border-radius: 50%;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
       border: 1px solid #ebecf5;
       i {
         color: #ebecf5;
         font-size: 15px;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
       &:hover {
         border-color: #b59a7b;

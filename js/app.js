@@ -18,11 +18,11 @@ var swiper = new Swiper(".heroSwiper", {
     clickable: true
   }
 });
-$(document).ready(function() {
+$(document).ready(function () {
   //aos Delay
-  $("section").each(function() {
+  $("section").each(function () {
     const sectionDivs = $(this).find("[data-aos]");
-    sectionDivs.each(function(index) {
+    sectionDivs.each(function (index) {
       $(this).attr("data-aos-delay", (index + 1) * 100);
     });
   });
@@ -30,9 +30,9 @@ $(document).ready(function() {
   AOS.init({
     offset: 20,
     delay: 50,
-    duration: 300,
-    easing: "linear",
-    once: true
+    duration: 750,
+    // easing: "linear",
+    once: true,
   });
 });
 let header = document.querySelector("header");
