@@ -117,8 +117,8 @@ header {
       justify-content: flex-end;
       gap: 6px;
       flex: 1;
-      i {
-        color: $second;
+      img {
+        height: 16px;
       }
       p {
         color: $second;
@@ -147,6 +147,9 @@ header {
       color: $second;
       a {
         color: $second;
+      }
+      img {
+        height: 16px;
       }
       @media (max-width: 768px) {
         display: none;

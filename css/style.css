@@ -107,8 +107,8 @@ header .bar .location {
   gap: 6px;
   flex: 1;
 }
-header .bar .location i {
-  color: #b0afb9;
+header .bar .location img {
+  height: 16px;
 }
 header .bar .location p {
   color: #b0afb9;
@@ -141,6 +141,9 @@ header .bar .phone {
 }
 header .bar .phone a {
   color: #b0afb9;
+}
+header .bar .phone img {
+  height: 16px;
 }
 @media (max-width: 768px) {
   header .bar .phone {
